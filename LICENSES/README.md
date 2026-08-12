@@ -3,7 +3,8 @@
 Cada GitHub Release oficial acompanha:
 
 - `LICENSES.zip` com os termos completos e SBOMs;
-- fontes correspondentes de `qtbase`, `qtsvg` e `qtimageformats` 6.8.2;
+- fontes correspondentes de `qtbase`, `qtsvg`, `qtimageformats` e
+  `qttranslations` 6.8.2;
 - `SHA256SUMS.txt`.
 
 O b-print usa Qt por ligação dinâmica sob GNU LGPL v3. As DLLs ficam

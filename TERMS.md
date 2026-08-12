@@ -53,3 +53,30 @@ software.
 Aplicam-se, entre outras normas cabíveis, a Lei brasileira 9.609/1998 e a Lei
 9.610/1998. Ao instalar ou utilizar o b-print, o usuário declara aceitar estes
 termos.
+
+## 7. Idioma controlador
+
+A versão em português brasileiro destes termos é a versão oficial e
+controladora. Traduções são fornecidas apenas para facilitar a compreensão. Em
+caso de divergência, prevalece o texto em português brasileiro.
+
+## 8. Desenvolvimento assistido por IA
+
+O b-print é desenvolvido e mantido por Wilian Bresley da Costa com assistência
+do Cursor e de modelos de inteligência artificial na implementação, revisão e
+documentação. As decisões, testes, distribuição e responsabilidade pelo
+produto permanecem do autor.
+
+O aplicativo em execução não utiliza IA e não envia capturas ou dados do
+usuário a serviços de IA.
+
+## 9. Ausência de afiliação
+
+Cursor, Anysphere e fornecedores de modelos de IA não patrocinam, não endossam
+e não possuem afiliação com o b-print. Marcas e nomes pertencem aos respectivos
+titulares.
+
+## 10. Contato
+
+Suporte privado, licenciamento, aquisição de direitos ou parceria comercial:
+**b-print@bresley.win**

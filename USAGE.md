@@ -1,5 +1,7 @@
 # Manual rápido e comandos
 
+[English](USAGE.en.md)
+
 ## Interface
 
 Depois de instalado, o b-print permanece na bandeja do Windows.
@@ -15,13 +17,14 @@ A Ajuda completa está dentro do próprio programa.
 ## Instalação silenciosa
 
 ```powershell
-.\b-print-1.0.0-windows-x64.exe /S
+.\b-print-1.1.0-windows-x64.exe /S /LANG=pt-BR
 ```
 
 Com opções:
 
 ```powershell
-.\b-print-1.0.0-windows-x64.exe /S `
+.\b-print-1.1.0-windows-x64.exe /S `
+  /LANG=pt-BR `
   /DIR="$env:LOCALAPPDATA\Programs\b-print" `
   /AUTOSTART=0 `
   /DESKTOP=1 `
@@ -31,6 +34,7 @@ Com opções:
 Opções:
 
 - `/S`: sem interface.
+- `/LANG=pt-BR|en`: idioma do instalador e da primeira abertura.
 - `/DIR=`: pasta de instalação.
 - `/AUTOSTART=0|1`: iniciar com o Windows.
 - `/DESKTOP=0|1`: atalho na Área de Trabalho.
@@ -41,7 +45,7 @@ Opções:
 Pelo instalador:
 
 ```powershell
-.\b-print-1.0.0-windows-x64.exe /uninstall /S
+.\b-print-1.1.0-windows-x64.exe /uninstall /S
 ```
 
 Pela instalação:
@@ -74,7 +78,7 @@ Configuração por linha de comando:
 ## Verificar SHA-256
 
 ```powershell
-Get-FileHash .\b-print-1.0.0-windows-x64.exe -Algorithm SHA256
+Get-FileHash .\b-print-1.1.0-windows-x64.exe -Algorithm SHA256
 ```
 
 Compare o resultado com `SHA256SUMS.txt` da mesma Release.

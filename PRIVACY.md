@@ -1,5 +1,7 @@
 # Privacidade
 
+[English](PRIVACY.en.md)
+
 O b-print foi projetado para funcionar localmente no computador.
 
 ## O que o programa não faz
@@ -10,6 +12,7 @@ O b-print foi projetado para funcionar localmente no computador.
 - Não envia logs automaticamente.
 - Não faz upload para nuvem.
 - Não vende nem compartilha dados.
+- Não utiliza IA durante a execução nem envia dados para serviços de IA.
 
 ## Arquivos locais
 
@@ -41,3 +44,5 @@ antes de anexar a uma Issue pública.
 
 O desinstalador remove a pasta do programa, incluindo configurações e logs
 locais guardados nela. Capturas salvas em outras pastas não são apagadas.
+
+Contato privado sobre privacidade ou suporte: **b-print@bresley.win**
