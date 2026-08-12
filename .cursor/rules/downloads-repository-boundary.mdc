@@ -1,0 +1,32 @@
+---
+description: Protege o repositório público de downloads sem expor o código privado
+alwaysApply: true
+---
+
+# Repositório público de downloads
+
+## Permitido aqui
+
+- README, manual, termos, privacidade, licenças e notas de versão.
+- Configuração de Issues e documentação de suporte.
+- GitHub Releases com instalador, checksums, fontes Qt e `LICENSES.zip`.
+
+## Proibido aqui
+
+- Código C++ próprio, CMake, scripts internos ou arquivos do repositório privado.
+- Commitar `.exe`, `.zip`, dumps ou outros binários no histórico Git.
+- Alterar o aplicativo neste repositório.
+
+Correções e features do programa pertencem a `wilbresley/b-print`
+(`S:\workspace\b-print`), que deve permanecer PRIVATE.
+
+## Publicar versão
+
+1. Só publicar depois do build/testes no repositório privado.
+2. Usar assets de `build\release-X.Y.Z`.
+3. Release/tag = `vX.Y.Z`; instalador = `b-print-X.Y.Z-windows-x64.exe`.
+4. Anexar `LICENSES.zip`, `SHA256SUMS.txt`, qtbase/qtsvg/qtimageformats.
+5. Conferir os SHA-256 após upload e manter a Release pública, não draft.
+6. Atualizar a versão e links do README/USAGE.
+
+Commit/push/release somente com autorização do usuário.
