@@ -1,0 +1,80 @@
+# Manual rápido e comandos
+
+## Interface
+
+Depois de instalado, o b-print permanece na bandeja do Windows.
+
+- Clique esquerdo no ícone: captura por região.
+- Clique direito: região, timer, todos os monitores, janela sob o mouse,
+  recentes, quadro, fixar, configurações, ajuda e sair.
+- Print Screen: captura por região.
+- Ctrl+Shift+D: atalho adicional padrão, configurável.
+
+A Ajuda completa está dentro do próprio programa.
+
+## Instalação silenciosa
+
+```powershell
+.\b-print-1.0.0-windows-x64.exe /S
+```
+
+Com opções:
+
+```powershell
+.\b-print-1.0.0-windows-x64.exe /S `
+  /DIR="$env:LOCALAPPDATA\Programs\b-print" `
+  /AUTOSTART=0 `
+  /DESKTOP=1 `
+  /LAUNCH=0
+```
+
+Opções:
+
+- `/S`: sem interface.
+- `/DIR=`: pasta de instalação.
+- `/AUTOSTART=0|1`: iniciar com o Windows.
+- `/DESKTOP=0|1`: atalho na Área de Trabalho.
+- `/LAUNCH=0|1`: iniciar após instalar.
+
+## Desinstalação silenciosa
+
+Pelo instalador:
+
+```powershell
+.\b-print-1.0.0-windows-x64.exe /uninstall /S
+```
+
+Pela instalação:
+
+```powershell
+& "$env:LOCALAPPDATA\Programs\b-print\b-print-desinstalador.exe" --uninstall /S
+```
+
+## Comandos do aplicativo instalado
+
+```powershell
+$app = "$env:LOCALAPPDATA\Programs\b-print\b-print.exe"
+
+& $app --region
+& $app --active-screen
+& $app --all-screens
+& $app --window-under-cursor
+& $app --tray
+```
+
+Configuração por linha de comando:
+
+```powershell
+& $app --configure --desktop-shortcut --autostart
+& $app --configure --no-desktop-shortcut --no-autostart
+& $app --set-save-dir "D:\Capturas"
+& $app --factory-reset
+```
+
+## Verificar SHA-256
+
+```powershell
+Get-FileHash .\b-print-1.0.0-windows-x64.exe -Algorithm SHA256
+```
+
+Compare o resultado com `SHA256SUMS.txt` da mesma Release.
