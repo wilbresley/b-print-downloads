@@ -7,16 +7,15 @@ redaction, magnification, and an image editor.
 
 ## Download
 
-Always download b-print from the official page:
+Public downloads are temporarily unavailable while the first release is being
+tested.
 
-**[GitHub Releases](https://github.com/wilbresley/b-print-downloads/releases/latest)**
+Internal test version: **1.0.0**
 
-Current stable version: **1.1.0**
-
-File:
+Planned installer name:
 
 ```text
-b-print-1.1.0-windows-x64.exe
+b-print-1.0.0-windows-x64.exe
 ```
 
 The installer is free, installs only for the current Windows user, and does not
@@ -26,6 +25,8 @@ require administrator privileges.
 > show an “Unknown publisher” or SmartScreen warning.
 
 ## Installation
+
+When a public Release is authorized:
 
 1. Download the installer from Releases.
 2. Verify its SHA-256 against `SHA256SUMS.txt`.
@@ -41,10 +42,14 @@ Default installation path:
 
 ## Quick use
 
-- **Print Screen**: starts a b-print region capture while the app is running.
+- **Print Screen** and **Windows+Shift+S**: open b-print by default; each can
+  be returned to Windows independently in Settings.
+- **Windows+Shift+D**: configurable default secondary shortcut.
 - **Left-click the tray icon**: capture a region.
 - **Right-click the tray icon**: access all modes, Settings, Help, and Exit.
 - **Esc**: closes menus or unconfirmed items first, then cancels capture.
+- **Settings → Uninstall**: removes the app after confirmation; captures
+  saved in other folders remain.
 
 See [USAGE.en.md](USAGE.en.md) for the manual and command-line options.
 
@@ -66,6 +71,9 @@ endorse, or have any affiliation with b-print. Their trademarks belong to
 their respective owners.
 
 ## Support logs
+
+If the installer fails, it creates `b-print-installer-error.log` beside the
+executable and offers an **Open log location** button.
 
 If you encounter a problem, close b-print and collect:
 

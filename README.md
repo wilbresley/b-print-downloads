@@ -7,16 +7,15 @@ marca-texto, censura, lupa e editor.
 
 ## Download
 
-Baixe sempre pela página oficial:
+Os downloads públicos estão temporariamente indisponíveis enquanto a primeira
+versão é testada.
 
-**[GitHub Releases](https://github.com/wilbresley/b-print-downloads/releases/latest)**
+Versão interna em teste: **1.0.0**
 
-Versão estável atual: **1.1.0**
-
-Arquivo:
+Nome planejado do instalador:
 
 ```text
-b-print-1.1.0-windows-x64.exe
+b-print-1.0.0-windows-x64.exe
 ```
 
 O instalador é gratuito, instala somente para o usuário atual e não solicita
@@ -26,6 +25,8 @@ permissão de administrador.
 > mostrar “Editor desconhecido” ou um aviso do SmartScreen.
 
 ## Instalação
+
+Quando uma Release pública for autorizada:
 
 1. Baixe o instalador na página de Releases.
 2. Confira o SHA-256 publicado em `SHA256SUMS.txt`.
@@ -41,10 +42,14 @@ Instalação padrão:
 
 ## Uso rápido
 
-- **Print Screen**: abre a captura do b-print enquanto ele estiver na bandeja.
+- **Print Screen** e **Windows+Shift+S**: abrem o b-print por padrão; podem ser
+  devolvidos individualmente ao Windows em Configurações.
+- **Windows+Shift+D**: atalho extra padrão, configurável.
 - **Clique esquerdo na bandeja**: capturar uma região.
 - **Clique direito na bandeja**: todos os modos, Configurações, Ajuda e Sair.
 - **ESC**: fecha primeiro menus/itens pendentes e depois cancela a captura.
+- **Configurações → Desinstalar**: remove o app após confirmação; capturas
+  salvas em outras pastas permanecem.
 
 Manual e comandos: [USAGE.md](USAGE.md)
 
@@ -66,6 +71,9 @@ não são afiliados e não endossam o b-print. Suas marcas pertencem aos
 respectivos titulares.
 
 ## Logs para suporte
+
+Se o instalador falhar, ele cria `b-print-installer-error.log` ao lado do
+executável e oferece o botão **Abrir local do log**.
 
 Se ocorrer um problema, feche o aplicativo e copie:
 

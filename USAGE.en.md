@@ -9,21 +9,27 @@ After installation, b-print remains available in the Windows system tray.
 - Left-click the tray icon: capture a region.
 - Right-click: region, timer, all monitors, window under cursor, recent
   captures, canvas, pin, Settings, Help, and Exit.
-- Print Screen: capture a region.
-- Ctrl+Shift+D: configurable secondary shortcut.
+- Print Screen and Windows+Shift+S: capture with b-print by default. Under
+  Settings → Capture, each can be returned to Windows independently.
+- Windows+Shift+D: configurable default secondary shortcut.
+- The additional shortcut accepts combinations with modifiers or F1–F24 alone.
+- While creating or resizing an area, keep the left button pressed and also
+  hold the right button to lock the dragged point to the current monitor edges.
+  Release the right button to cross monitors; press it again to recalculate.
+- Settings → Uninstall removes the program after confirmation.
 
 The complete Help manual is included in the application.
 
 ## Silent installation
 
 ```powershell
-.\b-print-1.1.0-windows-x64.exe /S /LANG=en
+.\b-print-1.0.0-windows-x64.exe /S /LANG=en
 ```
 
 With options:
 
 ```powershell
-.\b-print-1.1.0-windows-x64.exe /S `
+.\b-print-1.0.0-windows-x64.exe /S `
   /LANG=en `
   /DIR="$env:LOCALAPPDATA\Programs\b-print" `
   /AUTOSTART=0 `
@@ -45,7 +51,7 @@ Options:
 Using the installer:
 
 ```powershell
-.\b-print-1.1.0-windows-x64.exe /uninstall /S
+.\b-print-1.0.0-windows-x64.exe /uninstall /S
 ```
 
 Using the installed uninstaller:
@@ -78,7 +84,7 @@ Configuration:
 ## Verify SHA-256
 
 ```powershell
-Get-FileHash .\b-print-1.1.0-windows-x64.exe -Algorithm SHA256
+Get-FileHash .\b-print-1.0.0-windows-x64.exe -Algorithm SHA256
 ```
 
 Compare the result against `SHA256SUMS.txt` from the same Release.

@@ -9,21 +9,27 @@ Depois de instalado, o b-print permanece na bandeja do Windows.
 - Clique esquerdo no ícone: captura por região.
 - Clique direito: região, timer, todos os monitores, janela sob o mouse,
   recentes, quadro, fixar, configurações, ajuda e sair.
-- Print Screen: captura por região.
-- Ctrl+Shift+D: atalho adicional padrão, configurável.
+- Print Screen e Windows+Shift+S: capturam pelo b-print por padrão. Em
+  Configurações → Captura, cada um pode ser devolvido ao Windows separadamente.
+- Windows+Shift+D: atalho adicional padrão, configurável.
+- O atalho extra aceita combinações com modificadores ou F1–F24 isoladas.
+- Ao criar ou redimensionar uma área, mantenha o botão esquerdo e segure também
+  o direito para travar o ponto nas bordas do monitor atual. Solte o direito
+  para atravessar monitores; pressione novamente para recalcular a trava.
+- Configurações → Desinstalar remove o programa após confirmação.
 
 A Ajuda completa está dentro do próprio programa.
 
 ## Instalação silenciosa
 
 ```powershell
-.\b-print-1.1.0-windows-x64.exe /S /LANG=pt-BR
+.\b-print-1.0.0-windows-x64.exe /S /LANG=pt-BR
 ```
 
 Com opções:
 
 ```powershell
-.\b-print-1.1.0-windows-x64.exe /S `
+.\b-print-1.0.0-windows-x64.exe /S `
   /LANG=pt-BR `
   /DIR="$env:LOCALAPPDATA\Programs\b-print" `
   /AUTOSTART=0 `
@@ -45,7 +51,7 @@ Opções:
 Pelo instalador:
 
 ```powershell
-.\b-print-1.1.0-windows-x64.exe /uninstall /S
+.\b-print-1.0.0-windows-x64.exe /uninstall /S
 ```
 
 Pela instalação:
@@ -78,7 +84,7 @@ Configuração por linha de comando:
 ## Verificar SHA-256
 
 ```powershell
-Get-FileHash .\b-print-1.1.0-windows-x64.exe -Algorithm SHA256
+Get-FileHash .\b-print-1.0.0-windows-x64.exe -Algorithm SHA256
 ```
 
 Compare o resultado com `SHA256SUMS.txt` da mesma Release.
