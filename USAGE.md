@@ -69,6 +69,7 @@ $app = "$env:LOCALAPPDATA\Programs\b-print\b-print.exe"
 
 & $app --region
 & $app --active-screen
+& $app --screen 0
 & $app --all-screens
 & $app --window-under-cursor
 & $app --tray
@@ -79,6 +80,7 @@ Configuração por linha de comando:
 ```powershell
 & $app --configure --desktop-shortcut --autostart
 & $app --configure --no-desktop-shortcut --no-autostart
+& $app --configure-defaults
 & $app --set-save-dir "D:\Capturas"
 & $app --factory-reset
 ```
