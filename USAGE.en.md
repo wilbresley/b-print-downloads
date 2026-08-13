@@ -16,6 +16,8 @@ After installation, b-print remains available in the Windows system tray.
 - While creating or resizing an area, keep the left button pressed and also
   hold the right button to lock the dragged point to the current monitor edges.
   Release the right button to cross monitors; press it again to recalculate.
+- Hold Alt to show the precision grid: only the area or item being manipulated
+  snaps to 5 px points; everything else remains in place.
 - Settings → Uninstall removes the program after confirmation.
 
 The complete Help manual is included in the application.

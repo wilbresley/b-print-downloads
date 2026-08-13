@@ -16,6 +16,8 @@ Depois de instalado, o b-print permanece na bandeja do Windows.
 - Ao criar ou redimensionar uma área, mantenha o botão esquerdo e segure também
   o direito para travar o ponto nas bordas do monitor atual. Solte o direito
   para atravessar monitores; pressione novamente para recalcular a trava.
+- Segure Alt para mostrar a grade de precisão: somente a área ou item em movimento
+  encaixa em pontos de 5 px; os demais permanecem parados.
 - Configurações → Desinstalar remove o programa após confirmação.
 
 A Ajuda completa está dentro do próprio programa.
