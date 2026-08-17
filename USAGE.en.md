@@ -2,25 +2,76 @@
 
 [Português (Brasil)](USAGE.md)
 
-## Interface
+Short **b-print 1.0.0** manual for Windows. Full Help lives inside the app
+(tray → **Help…**). This English page is informational.
 
-After installation, b-print remains available in the Windows system tray.
+---
 
-- Left-click the tray icon: capture a region.
-- Right-click: region, timer, all monitors, window under cursor, recent
-  captures, canvas, pin, Settings, Help, and Exit.
-- Print Screen and Windows+Shift+S: capture with b-print by default. Under
-  Settings → Capture, each can be returned to Windows independently.
-- Windows+Shift+D: configurable default secondary shortcut.
-- The additional shortcut accepts combinations with modifiers or F1–F24 alone.
-- While creating or resizing an area, keep the left button pressed and also
-  hold the right button to lock the dragged point to the current monitor edges.
-  Release the right button to cross monitors; press it again to recalculate.
-- Hold Alt to show the precision grid: only the area or item being manipulated
-  snaps to 5 px points; everything else remains in place.
-- Settings → Uninstall removes the program after confirmation.
+## After installation
 
-The complete Help manual is included in the application.
+b-print stays in the Windows tray (near the clock; on Windows 11 it may be
+behind the **^** arrow).
+
+| Action | Result |
+|--------|--------|
+| Left-click the icon | Region capture |
+| Right-click the icon | Full menu |
+| Print Screen | Capture with b-print (can be returned to Windows) |
+| Windows+Shift+S | Capture with b-print (can be returned to Windows) |
+| Windows+Shift+D | Default extra shortcut (configurable) |
+| Esc | Closes a menu/item first; then cancels capture |
+
+Right-click menu: region, timer, all monitors, window under the cursor,
+recents, canvas, pin, Settings, Help, and Exit.
+
+Exiting the app always returns Print Screen and Windows+Shift+S to Windows.
+
+---
+
+## Capture
+
+- Drag a rectangle, or click an entire monitor.
+- A hint appears at the bottom of the monitor where the mouse is.
+- **Left + right** while dragging: current monitor edges become barriers.
+  Release the right button to cross monitors.
+- **Alt**: 5 px grid only for the area or item being moved.
+- With **Rotate** active, the Alt grid is hidden; use **Shift + wheel** for
+  5° steps.
+
+Save (`Ctrl+S`) opens the scale menu. Copy (`Ctrl+C`) is immediate.
+
+---
+
+## Settings
+
+Open with a right-click on the tray → **Settings…**.
+
+- **Save** applies changes and **does not close** the window. Use X (or Esc)
+  to close.
+- After saving, **Settings saved** appears for about one second.
+- **Language** (Portuguese / English) takes effect only after Save. The app
+  restarts in the tray after 3 seconds. An open capture, editor, or pinned
+  image postpones the restart.
+- **Fixed shortcuts**: Print Screen and Windows+Shift+S start enabled. Clear
+  one to return it to Windows immediately.
+- **Extra shortcut**: combinations with Windows, Ctrl, Alt, or Shift, or
+  F1–F24 alone. Esc, Print Screen, and Windows+Shift+S are reserved.
+- **Uninstall b-print**: asks for confirmation. Close any capture, editor, or
+  pin first. Captures in other folders remain.
+
+---
+
+## Text and date/time
+
+On the **Text** button:
+
+- **Text…** opens typing.
+- **Date and time** inserts the stamp in the saved format.
+- The **clock** opens the format editor. Brazil 24h / US 12h / ISO 24h
+  presets change only order and clock; code names stay in the interface
+  language. **Save** also inserts the stamp.
+
+---
 
 ## Silent installation
 
@@ -39,40 +90,44 @@ With options:
   /LAUNCH=0
 ```
 
-Options:
+| Option | Purpose |
+|--------|---------|
+| `/S` | No UI |
+| `/LANG=pt-BR\|en` | Installer and first-run language |
+| `/DIR=` | Installation folder |
+| `/AUTOSTART=0\|1` | Start with Windows |
+| `/DESKTOP=0\|1` | Desktop shortcut |
+| `/LAUNCH=0\|1` | Launch after install |
 
-- `/S`: silent mode.
-- `/LANG=pt-BR|en`: installer and initial app language.
-- `/DIR=`: installation folder.
-- `/AUTOSTART=0|1`: start with Windows.
-- `/DESKTOP=0|1`: create a Desktop shortcut.
-- `/LAUNCH=0|1`: launch after installation.
+---
 
 ## Silent uninstall
 
-Using the installer:
+From the installer:
 
 ```powershell
 .\b-print-1.0.0-windows-x64.exe /uninstall /S
 ```
 
-Using the installed uninstaller:
+From the installed copy:
 
 ```powershell
 & "$env:LOCALAPPDATA\Programs\b-print\b-print-desinstalador.exe" --uninstall /S
 ```
 
-## Installed application commands
+---
+
+## Application commands
 
 ```powershell
 $app = "$env:LOCALAPPDATA\Programs\b-print\b-print.exe"
 
+& $app --tray
 & $app --region
 & $app --active-screen
 & $app --screen 0
 & $app --all-screens
 & $app --window-under-cursor
-& $app --tray
 ```
 
 Configuration:
@@ -81,9 +136,14 @@ Configuration:
 & $app --configure --desktop-shortcut --autostart
 & $app --configure --no-desktop-shortcut --no-autostart
 & $app --configure-defaults
-& $app --set-save-dir "D:\Screenshots"
+& $app --set-save-dir "D:\Captures"
+& $app --set-copy-dir "D:\Captures\copies"
 & $app --factory-reset
+& $app --help
+& $app --version
 ```
+
+---
 
 ## Verify SHA-256
 
@@ -91,4 +151,22 @@ Configuration:
 Get-FileHash .\b-print-1.0.0-windows-x64.exe -Algorithm SHA256
 ```
 
-Compare the result against `SHA256SUMS.txt` from the same Release.
+Compare with [SHA256SUMS.txt](https://github.com/wilbresley/b-print-downloads/releases/download/v1.0.0/SHA256SUMS.txt)
+from the same Release.
+
+---
+
+## If something goes wrong
+
+Installer: `b-print-installer-error.log` next to the exe, with a button to
+open that folder.
+
+Application:
+
+```text
+%LOCALAPPDATA%\Programs\b-print\data\logs
+%LOCALAPPDATA%\Programs\b-print\data\memory-stat.txt
+```
+
+[Issues](https://github.com/wilbresley/b-print-downloads/issues) ·
+**b-print@bresley.win**

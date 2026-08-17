@@ -2,25 +2,75 @@
 
 [English](USAGE.en.md)
 
-## Interface
+Manual resumido do **b-print 1.0.0** para Windows. A Ajuda completa fica
+dentro do aplicativo (bandeja → **Ajuda…**).
 
-Depois de instalado, o b-print permanece na bandeja do Windows.
+---
 
-- Clique esquerdo no ícone: captura por região.
-- Clique direito: região, timer, todos os monitores, janela sob o mouse,
-  recentes, quadro, fixar, configurações, ajuda e sair.
-- Print Screen e Windows+Shift+S: capturam pelo b-print por padrão. Em
-  Configurações → Captura, cada um pode ser devolvido ao Windows separadamente.
-- Windows+Shift+D: atalho adicional padrão, configurável.
-- O atalho extra aceita combinações com modificadores ou F1–F24 isoladas.
-- Ao criar ou redimensionar uma área, mantenha o botão esquerdo e segure também
-  o direito para travar o ponto nas bordas do monitor atual. Solte o direito
-  para atravessar monitores; pressione novamente para recalcular a trava.
-- Segure Alt para mostrar a grade de precisão: somente a área ou item em movimento
-  encaixa em pontos de 5 px; os demais permanecem parados.
-- Configurações → Desinstalar remove o programa após confirmação.
+## Depois de instalar
 
-A Ajuda completa está dentro do próprio programa.
+O b-print permanece na bandeja do Windows (perto do relógio; no Windows 11
+pode estar na seta **^**).
+
+| Ação | Resultado |
+|------|-----------|
+| Clique esquerdo no ícone | Captura por região |
+| Clique direito no ícone | Menu completo |
+| Print Screen | Captura pelo b-print (pode devolver ao Windows) |
+| Windows+Shift+S | Captura pelo b-print (pode devolver ao Windows) |
+| Windows+Shift+D | Atalho extra padrão (configurável) |
+| ESC | Fecha menu/item primeiro; depois cancela a captura |
+
+Menu de clique direito: região, timer, todos os monitores, janela sob o mouse,
+recentes, quadro, fixar, Configurações, Ajuda e Sair.
+
+Ao sair, Print Screen e Windows+Shift+S voltam ao Windows.
+
+---
+
+## Captura
+
+- Arraste um retângulo, ou clique em um monitor inteiro.
+- Uma dica aparece na parte de baixo do monitor onde está o mouse.
+- **Esquerdo + direito** durante o arraste: as bordas do monitor atual viram
+  barreiras. Solte o direito para atravessar monitores.
+- **Alt**: grade de 5 px só na área ou item que está em movimento.
+- Com **Girar** ativo, a grade Alt não aparece; use **Shift + roda** para
+  saltos de 5°.
+
+Salvar (`Ctrl+S`) abre o menu de escala. Copiar (`Ctrl+C`) é imediato.
+
+---
+
+## Configurações
+
+Abra pelo clique direito na bandeja → **Configurações…**.
+
+- **Salvar** aplica e **não fecha** a janela. O X (ou ESC) fecha.
+- Depois de salvar aparece **Configurações salvas** por cerca de 1 segundo.
+- **Idioma** (Português / English) só entra em vigor ao Salvar. O programa
+  reinicia na bandeja após 3 segundos. Captura, editor ou imagem fixada
+  abertos adiam o reinício.
+- **Atalhos fixos**: Print Screen e Windows+Shift+S vêm ligados. Desmarque
+  para devolver ao Windows na hora.
+- **Atalho extra**: combinações com Windows, Ctrl, Alt ou Shift, ou F1–F24
+  sozinhas. ESC, Print Screen e Windows+Shift+S são reservados.
+- **Desinstalar b-print**: pede confirmação. Se houver captura/editor/pin
+  aberto, feche o trabalho primeiro. Capturas em outras pastas permanecem.
+
+---
+
+## Texto e data/hora
+
+No botão **Texto**:
+
+- **Texto…** abre a digitação.
+- **Data e hora** coloca o carimbo no formato salvo.
+- O **relógio** abre o formato. Presets Brasil 24h / US 12h / ISO 24h mudam
+  só a ordem e o relógio; os nomes dos códigos ficam no idioma da interface.
+  **Salvar** já insere o carimbo.
+
+---
 
 ## Instalação silenciosa
 
@@ -39,14 +89,16 @@ Com opções:
   /LAUNCH=0
 ```
 
-Opções:
+| Opção | Função |
+|-------|--------|
+| `/S` | Sem interface |
+| `/LANG=pt-BR\|en` | Idioma do instalador e da primeira abertura |
+| `/DIR=` | Pasta de instalação |
+| `/AUTOSTART=0\|1` | Iniciar com o Windows |
+| `/DESKTOP=0\|1` | Atalho na Área de trabalho |
+| `/LAUNCH=0\|1` | Abrir após instalar |
 
-- `/S`: sem interface.
-- `/LANG=pt-BR|en`: idioma do instalador e da primeira abertura.
-- `/DIR=`: pasta de instalação.
-- `/AUTOSTART=0|1`: iniciar com o Windows.
-- `/DESKTOP=0|1`: atalho na Área de Trabalho.
-- `/LAUNCH=0|1`: iniciar após instalar.
+---
 
 ## Desinstalação silenciosa
 
@@ -62,28 +114,35 @@ Pela instalação:
 & "$env:LOCALAPPDATA\Programs\b-print\b-print-desinstalador.exe" --uninstall /S
 ```
 
-## Comandos do aplicativo instalado
+---
+
+## Comandos do aplicativo
 
 ```powershell
 $app = "$env:LOCALAPPDATA\Programs\b-print\b-print.exe"
 
+& $app --tray
 & $app --region
 & $app --active-screen
 & $app --screen 0
 & $app --all-screens
 & $app --window-under-cursor
-& $app --tray
 ```
 
-Configuração por linha de comando:
+Configuração:
 
 ```powershell
 & $app --configure --desktop-shortcut --autostart
 & $app --configure --no-desktop-shortcut --no-autostart
 & $app --configure-defaults
 & $app --set-save-dir "D:\Capturas"
+& $app --set-copy-dir "D:\Capturas\copias"
 & $app --factory-reset
+& $app --help
+& $app --version
 ```
+
+---
 
 ## Verificar SHA-256
 
@@ -91,4 +150,22 @@ Configuração por linha de comando:
 Get-FileHash .\b-print-1.0.0-windows-x64.exe -Algorithm SHA256
 ```
 
-Compare o resultado com `SHA256SUMS.txt` da mesma Release.
+Compare o resultado com [SHA256SUMS.txt](https://github.com/wilbresley/b-print-downloads/releases/download/v1.0.0/SHA256SUMS.txt)
+da mesma Release.
+
+---
+
+## Se algo der errado
+
+Instalador: `b-print-installer-error.log` ao lado do exe, com botão para
+abrir a pasta.
+
+Aplicativo:
+
+```text
+%LOCALAPPDATA%\Programs\b-print\data\logs
+%LOCALAPPDATA%\Programs\b-print\data\memory-stat.txt
+```
+
+[Issues](https://github.com/wilbresley/b-print-downloads/issues) ·
+**b-print@bresley.win**

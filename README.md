@@ -2,80 +2,106 @@
 
 [English](README.en.md)
 
-Captura de tela leve para Windows, com anotações, setas, formas, texto,
+**Captura de tela para Windows**, com anotações na hora: setas, formas, texto,
 marca-texto, censura, lupa e editor.
+
+Versão atual: **1.0.0** (17 de agosto de 2026)
+
+O programa fica na bandeja do sistema, instala só para o usuário atual e
+não pede permissão de administrador.
+
+---
 
 ## Download
 
-Os downloads públicos estão temporariamente indisponíveis enquanto a primeira
-versão é testada.
+| Arquivo | Conteúdo |
+|---------|----------|
+| [b-print-1.0.0-windows-x64.exe](https://github.com/wilbresley/b-print-downloads/releases/download/v1.0.0/b-print-1.0.0-windows-x64.exe) | Instalador Windows 64 bits |
+| [SHA256SUMS.txt](https://github.com/wilbresley/b-print-downloads/releases/download/v1.0.0/SHA256SUMS.txt) | Checksums SHA-256 |
+| [LICENSES.zip](https://github.com/wilbresley/b-print-downloads/releases/download/v1.0.0/LICENSES.zip) | Termos, LGPL/Qt, SBOMs e atribuições |
+| [Releases](https://github.com/wilbresley/b-print-downloads/releases/tag/v1.0.0) | Página completa da versão, inclusive fontes Qt 6.8.2 |
 
-Versão interna em teste: **1.0.0**
+O instalador é **gratuito**.
 
-Nome planejado do instalador:
+> O executável **não possui assinatura digital paga**. O Windows pode mostrar
+> “Editor desconhecido” ou um aviso do SmartScreen. Isso é esperado. Confira
+> o SHA-256 em `SHA256SUMS.txt` antes de executar.
 
-```text
-b-print-1.0.0-windows-x64.exe
-```
-
-O instalador é gratuito, instala somente para o usuário atual e não solicita
-permissão de administrador.
-
-> O executável não possui assinatura digital paga. Por isso, o Windows pode
-> mostrar “Editor desconhecido” ou um aviso do SmartScreen.
+---
 
 ## Instalação
 
-Quando uma Release pública for autorizada:
+1. Baixe `b-print-1.0.0-windows-x64.exe`.
+2. Confira o SHA-256 com o arquivo da mesma Release.
+3. Execute o instalador. Ele abre em **Português (Brasil)** e permite escolher
+   **English** na primeira tela.
+4. O b-print permanece na bandeja, perto do relógio.
 
-1. Baixe o instalador na página de Releases.
-2. Confira o SHA-256 publicado em `SHA256SUMS.txt`.
-3. Execute o arquivo; ele abre em Português (Brasil) e permite escolher English
-   na primeira tela.
-4. O b-print ficará na bandeja do sistema, perto do relógio.
-
-Instalação padrão:
+Pasta padrão:
 
 ```text
 %LOCALAPPDATA%\Programs\b-print
 ```
 
+Instalação silenciosa, desinstalação e linha de comando: [USAGE.md](USAGE.md)
+
+---
+
 ## Uso rápido
 
-- **Print Screen** e **Windows+Shift+S**: abrem o b-print por padrão; podem ser
-  devolvidos individualmente ao Windows em Configurações.
-- **Windows+Shift+D**: atalho extra padrão, configurável.
-- **Clique esquerdo na bandeja**: capturar uma região.
-- **Clique direito na bandeja**: todos os modos, Configurações, Ajuda e Sair.
-- **ESC**: fecha primeiro menus/itens pendentes e depois cancela a captura.
-- **Configurações → Desinstalar**: remove o app após confirmação; capturas
-  salvas em outras pastas permanecem.
+- **Print Screen** e **Windows+Shift+S** abrem o b-print por padrão. Cada um
+  pode ser devolvido ao Windows em Configurações → Captura.
+- **Windows+Shift+D** é o atalho extra (configurável; também aceita F1–F24).
+- **Clique esquerdo** no ícone da bandeja: capturar uma região.
+- **Clique direito**: todos os modos, Configurações, Ajuda e Sair.
+- **ESC** fecha primeiro menus e itens em ajuste; só depois cancela a captura.
+- **Alt** mostra a grade de 5 px só no gesto ativo.
+- Esquerdo + direito, durante o arraste da área, trava nas bordas do monitor.
+- **Configurações → Desinstalar** remove o programa após confirmação.
+  Capturas salvas em outras pastas permanecem.
 
-Manual e comandos: [USAGE.md](USAGE.md)
+A Ajuda completa está dentro do próprio programa.
+
+---
+
+## O que está incluso
+
+- Captura por região, monitor, todos os monitores, janela sob o mouse e timer
+- Anotações: setas, formas, texto, data/hora, marca-texto, lápis e censura
+- Lupa na captura em tela cheia e editor em janela com zoom
+- Temas Escuro e Claro, idioma Português (Brasil) / English
+- Cópia imediata para a área de transferência e salvamento em PNG, JPEG ou WebP
+- Recentes, quadro e imagens fixadas no topo
+
+---
 
 ## Privacidade
 
-O b-print funciona localmente. Não envia capturas, telemetria ou logs para um
-servidor. Consulte [PRIVACY.md](PRIVACY.md).
+O b-print funciona **só neste computador**. Não envia capturas, telemetria ou
+logs para servidor. Não usa IA em execução.
+
+Detalhes: [PRIVACY.md](PRIVACY.md)
+
+---
 
 ## Transparência de desenvolvimento
 
 O b-print é desenvolvido e mantido por **Wilian Bresley da Costa** com
 assistência do **Cursor** e de modelos de inteligência artificial na
-implementação, revisão e documentação. As decisões, testes, distribuição e
+implementação, revisão e documentação. Decisões, testes, distribuição e
 responsabilidade pelo produto permanecem do autor.
 
-O aplicativo em execução não usa IA e não envia capturas ou dados do usuário a
-serviços de IA. Cursor, Anysphere e os fornecedores dos modelos não patrocinam,
-não são afiliados e não endossam o b-print. Suas marcas pertencem aos
-respectivos titulares.
+Cursor, Anysphere e fornecedores de modelos não patrocinam, não endossam e
+não são afiliados ao b-print.
+
+---
 
 ## Logs para suporte
 
-Se o instalador falhar, ele cria `b-print-installer-error.log` ao lado do
-executável e oferece o botão **Abrir local do log**.
+Se o instalador falhar, ele grava `b-print-installer-error.log` ao lado do
+executável e oferece **Abrir local do log**.
 
-Se ocorrer um problema, feche o aplicativo e copie:
+Em caso de problema no aplicativo, feche o b-print e copie:
 
 ```text
 %LOCALAPPDATA%\Programs\b-print\data\logs
@@ -83,19 +109,18 @@ Se ocorrer um problema, feche o aplicativo e copie:
 ```
 
 Abra uma [Issue](https://github.com/wilbresley/b-print-downloads/issues) com o
-horário aproximado do erro. Revise os logs antes de enviar, pois podem conter
-caminhos e nomes de arquivos.
+horário aproximado. Revise os arquivos: eles podem conter caminhos.
 
-Suporte privado, licenciamento, aquisição de direitos ou parceria comercial:
-**b-print@bresley.win**
+Contato privado, licenciamento ou parceria: **b-print@bresley.win**
+
+---
 
 ## Licença
 
-O código próprio do b-print é **freeware proprietário**. Ele não é código
-aberto. Consulte [TERMS.md](TERMS.md).
+O código próprio do b-print é **freeware proprietário**. Não é código aberto.
+Consulte [TERMS.md](TERMS.md). A versão em português brasileiro controla.
 
-Bibliotecas e recursos de terceiros permanecem sob suas próprias licenças. A
-Release inclui `LICENSES.zip`, os quatro arquivos de fontes correspondentes do
-Qt 6.8.2 e os respectivos SBOMs.
+Qt e demais bibliotecas permanecem nas licenças originais. Cada Release inclui
+`LICENSES.zip` e os quatro arquivos de fonte correspondente do Qt 6.8.2.
 
 Copyright © 2026 Wilian Bresley da Costa.
