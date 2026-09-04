@@ -1,8 +1,8 @@
-# Quick manual and commands
+﻿# Quick manual and commands
 
 [Português (Brasil)](USAGE.md)
 
-Short **b-print 1.0.0** manual for Windows. Full Help lives inside the app
+Short **b-print 1.0.1** manual for Windows. Full Help lives inside the app
 (tray → **Help…**). This English page is informational.
 
 ---
@@ -76,13 +76,13 @@ On the **Text** button:
 ## Silent installation
 
 ```powershell
-.\b-print-1.0.0-windows-x64.exe /S /LANG=en
+.\b-print-1.0.1-windows-x64.exe /S /LANG=en
 ```
 
 With options:
 
 ```powershell
-.\b-print-1.0.0-windows-x64.exe /S `
+.\b-print-1.0.1-windows-x64.exe /S `
   /LANG=en `
   /DIR="$env:LOCALAPPDATA\Programs\b-print" `
   /AUTOSTART=0 `
@@ -106,7 +106,7 @@ With options:
 From the installer:
 
 ```powershell
-.\b-print-1.0.0-windows-x64.exe /uninstall /S
+.\b-print-1.0.1-windows-x64.exe /uninstall /S
 ```
 
 From the installed copy:
@@ -148,10 +148,10 @@ Configuration:
 ## Verify SHA-256
 
 ```powershell
-Get-FileHash .\b-print-1.0.0-windows-x64.exe -Algorithm SHA256
+Get-FileHash .\b-print-1.0.1-windows-x64.exe -Algorithm SHA256
 ```
 
-Compare with [SHA256SUMS.txt](https://github.com/wilbresley/b-print-downloads/releases/download/v1.0.0/SHA256SUMS.txt)
+Compare with [SHA256SUMS.txt](https://github.com/wilbresley/b-print-downloads/releases/download/v1.0.1/SHA256SUMS.txt)
 from the same Release.
 
 ---

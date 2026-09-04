@@ -1,11 +1,11 @@
-# b-print
+﻿# b-print
 
 [English](README.en.md)
 
 **Captura de tela para Windows**, com anotações na hora: setas, formas, texto,
 marca-texto, censura, lupa e editor.
 
-Versão atual: **1.0.0** (17 de agosto de 2026)
+Versão atual: **1.0.1** (4 de setembro de 2026)
 
 O programa fica na bandeja do sistema, instala só para o usuário atual e
 não pede permissão de administrador.
@@ -16,10 +16,10 @@ não pede permissão de administrador.
 
 | Arquivo | Conteúdo |
 |---------|----------|
-| [b-print-1.0.0-windows-x64.exe](https://github.com/wilbresley/b-print-downloads/releases/download/v1.0.0/b-print-1.0.0-windows-x64.exe) | Instalador Windows 64 bits |
-| [SHA256SUMS.txt](https://github.com/wilbresley/b-print-downloads/releases/download/v1.0.0/SHA256SUMS.txt) | Checksums SHA-256 |
-| [LICENSES.zip](https://github.com/wilbresley/b-print-downloads/releases/download/v1.0.0/LICENSES.zip) | Termos, LGPL/Qt, SBOMs e atribuições |
-| [Releases](https://github.com/wilbresley/b-print-downloads/releases/tag/v1.0.0) | Página completa da versão, inclusive fontes Qt 6.8.2 |
+| [b-print-1.0.1-windows-x64.exe](https://github.com/wilbresley/b-print-downloads/releases/download/v1.0.1/b-print-1.0.1-windows-x64.exe) | Instalador Windows 64 bits |
+| [SHA256SUMS.txt](https://github.com/wilbresley/b-print-downloads/releases/download/v1.0.1/SHA256SUMS.txt) | Checksums SHA-256 |
+| [LICENSES.zip](https://github.com/wilbresley/b-print-downloads/releases/download/v1.0.1/LICENSES.zip) | Termos, LGPL/Qt, SBOMs e atribuições |
+| [Releases](https://github.com/wilbresley/b-print-downloads/releases/tag/v1.0.1) | Página completa da versão, inclusive fontes Qt 6.8.2 |
 
 O instalador é **gratuito**.
 
@@ -31,7 +31,7 @@ O instalador é **gratuito**.
 
 ## Instalação
 
-1. Baixe `b-print-1.0.0-windows-x64.exe`.
+1. Baixe `b-print-1.0.1-windows-x64.exe`.
 2. Confira o SHA-256 com o arquivo da mesma Release.
 3. Execute o instalador. Ele abre em **Português (Brasil)** e permite escolher
    **English** na primeira tela.

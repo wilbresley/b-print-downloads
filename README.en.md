@@ -1,11 +1,11 @@
-# b-print
+﻿# b-print
 
 [Português (Brasil)](README.md)
 
 **Screenshot tool for Windows**, with immediate annotations: arrows, shapes,
 text, highlighter, redaction, magnifier, and an image editor.
 
-Current version: **1.0.0** (17 August 2026)
+Current version: **1.0.1** (4 September 2026)
 
 The app lives in the system tray, installs only for the current user, and
 does not ask for administrator privileges.
@@ -16,10 +16,10 @@ does not ask for administrator privileges.
 
 | File | Contents |
 |------|----------|
-| [b-print-1.0.0-windows-x64.exe](https://github.com/wilbresley/b-print-downloads/releases/download/v1.0.0/b-print-1.0.0-windows-x64.exe) | Windows 64-bit installer |
-| [SHA256SUMS.txt](https://github.com/wilbresley/b-print-downloads/releases/download/v1.0.0/SHA256SUMS.txt) | SHA-256 checksums |
-| [LICENSES.zip](https://github.com/wilbresley/b-print-downloads/releases/download/v1.0.0/LICENSES.zip) | Terms, LGPL/Qt, SBOMs, and attributions |
-| [Releases](https://github.com/wilbresley/b-print-downloads/releases/tag/v1.0.0) | Full release page, including Qt 6.8.2 sources |
+| [b-print-1.0.1-windows-x64.exe](https://github.com/wilbresley/b-print-downloads/releases/download/v1.0.1/b-print-1.0.1-windows-x64.exe) | Windows 64-bit installer |
+| [SHA256SUMS.txt](https://github.com/wilbresley/b-print-downloads/releases/download/v1.0.1/SHA256SUMS.txt) | SHA-256 checksums |
+| [LICENSES.zip](https://github.com/wilbresley/b-print-downloads/releases/download/v1.0.1/LICENSES.zip) | Terms, LGPL/Qt, SBOMs, and attributions |
+| [Releases](https://github.com/wilbresley/b-print-downloads/releases/tag/v1.0.1) | Full release page, including Qt 6.8.2 sources |
 
 The installer is **free**.
 
@@ -34,7 +34,7 @@ versions differ.
 
 ## Installation
 
-1. Download `b-print-1.0.0-windows-x64.exe`.
+1. Download `b-print-1.0.1-windows-x64.exe`.
 2. Verify the SHA-256 against the matching Release file.
 3. Run the installer. It opens in **Brazilian Portuguese** by default;
    choose **English** on the first screen.
