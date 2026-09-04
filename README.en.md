@@ -21,6 +21,9 @@ does not ask for administrator privileges.
 | [LICENSES.zip](https://github.com/wilbresley/b-print-downloads/releases/download/v1.0.1/LICENSES.zip) | Terms, LGPL/Qt, SBOMs, and attributions |
 | [Releases](https://github.com/wilbresley/b-print-downloads/releases/tag/v1.0.1) | Full release page, including Qt 6.8.2 sources |
 
+Older versions (e.g. [1.0.0](https://github.com/wilbresley/b-print-downloads/releases/tag/v1.0.0))
+remain in the [Releases list](https://github.com/wilbresley/b-print-downloads/releases).
+
 The installer is **free**.
 
 > The executable **does not have a paid digital signature**. Windows may show

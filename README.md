@@ -21,6 +21,9 @@ não pede permissão de administrador.
 | [LICENSES.zip](https://github.com/wilbresley/b-print-downloads/releases/download/v1.0.1/LICENSES.zip) | Termos, LGPL/Qt, SBOMs e atribuições |
 | [Releases](https://github.com/wilbresley/b-print-downloads/releases/tag/v1.0.1) | Página completa da versão, inclusive fontes Qt 6.8.2 |
 
+Versões anteriores (ex.: [1.0.0](https://github.com/wilbresley/b-print-downloads/releases/tag/v1.0.0))
+continuam na [lista de Releases](https://github.com/wilbresley/b-print-downloads/releases).
+
 O instalador é **gratuito**.
 
 > O executável **não possui assinatura digital paga**. O Windows pode mostrar
