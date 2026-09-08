@@ -5,10 +5,20 @@
 **Screenshot tool for Windows**, with immediate annotations: arrows, shapes,
 text, highlighter, redaction, magnifier, and an image editor.
 
-Current version: **1.0.1** (4 September 2026)
+Current version: **1.1.0** (8 September 2026)
 
 The app lives in the system tray, installs only for the current user, and
 does not ask for administrator privileges.
+
+### What’s new in 1.1.0
+
+Solid-bar redaction now has a color picker in the Censor menu. The
+**Color** swatch stays available: if Pixelate or Blur is selected,
+clicking it switches to Solid bar, opens the picker, and confirming
+arms the tool so you can draw the area. Color resets to black on every
+capture and is not saved in settings. Pixelate and Blur are unchanged.
+While dragging the bar, the preview is semi-transparent with a dashed
+outline so it stays visible on any background.
 
 ---
 
@@ -16,12 +26,13 @@ does not ask for administrator privileges.
 
 | File | Contents |
 |------|----------|
-| [b-print-1.0.1-windows-x64.exe](https://github.com/wilbresley/b-print-downloads/releases/download/v1.0.1/b-print-1.0.1-windows-x64.exe) | Windows 64-bit installer |
-| [SHA256SUMS.txt](https://github.com/wilbresley/b-print-downloads/releases/download/v1.0.1/SHA256SUMS.txt) | SHA-256 checksums |
-| [LICENSES.zip](https://github.com/wilbresley/b-print-downloads/releases/download/v1.0.1/LICENSES.zip) | Terms, LGPL/Qt, SBOMs, and attributions |
-| [Releases](https://github.com/wilbresley/b-print-downloads/releases/tag/v1.0.1) | Full release page, including Qt 6.8.2 sources |
+| [b-print-1.1.0-windows-x64.exe](https://github.com/wilbresley/b-print-downloads/releases/download/v1.1.0/b-print-1.1.0-windows-x64.exe) | Windows 64-bit installer |
+| [SHA256SUMS.txt](https://github.com/wilbresley/b-print-downloads/releases/download/v1.1.0/SHA256SUMS.txt) | SHA-256 checksums |
+| [LICENSES.zip](https://github.com/wilbresley/b-print-downloads/releases/download/v1.1.0/LICENSES.zip) | Terms, LGPL/Qt, SBOMs, and attributions |
+| [Releases](https://github.com/wilbresley/b-print-downloads/releases/tag/v1.1.0) | Full release page, including Qt 6.8.2 sources |
 
-Older versions (e.g. [1.0.0](https://github.com/wilbresley/b-print-downloads/releases/tag/v1.0.0))
+Older versions ([1.0.1](https://github.com/wilbresley/b-print-downloads/releases/tag/v1.0.1)
+and [1.0.0](https://github.com/wilbresley/b-print-downloads/releases/tag/v1.0.0))
 remain in the [Releases list](https://github.com/wilbresley/b-print-downloads/releases).
 
 The installer is **free**.
@@ -37,7 +48,7 @@ versions differ.
 
 ## Installation
 
-1. Download `b-print-1.0.1-windows-x64.exe`.
+1. Download `b-print-1.1.0-windows-x64.exe`.
 2. Verify the SHA-256 against the matching Release file.
 3. Run the installer. It opens in **Brazilian Portuguese** by default;
    choose **English** on the first screen.
@@ -75,7 +86,7 @@ The full Help manual is included in the application.
 
 - Region, monitor, all-monitors, window-under-cursor, and timer capture
 - Annotations: arrows, shapes, text, date/time stamp, highlighter, pencil,
-  and redaction
+  and redaction (solid bar with a color picker)
 - Full-screen magnifier and a windowed editor with zoom
 - Dark and Light themes, Portuguese (Brazil) / English
 - Immediate clipboard copy and save as PNG, JPEG, or WebP
