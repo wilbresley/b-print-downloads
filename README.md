@@ -17,9 +17,10 @@ e deixam OK/Cancelar clicáveis, inclusive em telas ~1280×680.
 
 **Configurações → Atualizações** consulta este canal a cada 24 h e instala
 direto a versão mais nova (quem está na 1.0.0 pula para a 1.2.0, sem passar
-pela 1.1.0). **Atualizar automaticamente** baixa e instala, sem assistente.
-**Atualizar manualmente** abre esta página no navegador. O instalador de
-upgrade fecha o b-print em execução e substitui os arquivos.
+pela 1.1.0). **Atualizar automaticamente** abre o atualizador separado,
+fecha o app, baixa e instala. **Atualizar manualmente** abre esta página
+no navegador. O instalador de upgrade fecha o b-print em execução e
+substitui os arquivos.
 
 ---
 

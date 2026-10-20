@@ -56,8 +56,9 @@ Abra pelo clique direito na bandeja → **Configurações…**.
 - **Atalho extra**: combinações com Windows, Ctrl, Alt ou Shift, ou F1–F24
   sozinhas. ESC, Print Screen e Windows+Shift+S são reservados.
 - **Atualizações**: **Verificar atualizações** consulta o canal público.
-  **Atualizar automaticamente** baixa e instala a versão mais nova, sem
-  assistente. **Atualizar manualmente** abre a página de Releases.
+  **Atualizar automaticamente** abre o atualizador separado, fecha o app,
+  baixa e instala a versão mais nova. **Atualizar manualmente** abre a
+  página de Releases.
 - **Desinstalar b-print**: pede confirmação. Se houver captura/editor/pin
   aberto, feche o trabalho primeiro. Capturas em outras pastas permanecem.
 

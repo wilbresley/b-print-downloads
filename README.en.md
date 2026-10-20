@@ -17,9 +17,9 @@ resize and keep OK/Cancel clickable, including on ~1280×680 screens.
 
 **Settings → Updates** checks this channel every 24 hours and installs the
 newest version directly (1.0.0 jumps to 1.2.0 without installing 1.1.0).
-**Update automatically** downloads and installs with no wizard. **Update
-manually** opens this page in the browser. The upgrade installer closes a
-running b-print and replaces the files.
+**Update automatically** opens a separate updater, closes the app, then
+downloads and installs. **Update manually** opens this page in the browser.
+The upgrade installer closes a running b-print and replaces the files.
 
 ---
 
