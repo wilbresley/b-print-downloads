@@ -14,6 +14,14 @@ O b-print foi projetado para funcionar localmente no computador.
 - Não vende nem compartilha dados.
 - Não utiliza IA durante a execução nem envia dados para serviços de IA.
 
+## Atualizações
+
+A cada 24 h, e ao clicar em **Verificar atualizações**, o programa consulta
+a lista pública de Releases em
+[wilbresley/b-print-downloads](https://github.com/wilbresley/b-print-downloads).
+Não envia capturas. O instalador só é baixado depois que você confirma
+**Atualizar automaticamente**.
+
 ## Arquivos locais
 
 Configurações, histórico recente e logs ficam na pasta da instalação:

@@ -14,6 +14,14 @@ b-print is designed to run locally on the user's computer.
 - It does not sell or share data.
 - It does not use AI at runtime or send data to AI services.
 
+## Updates
+
+Every 24 hours, and when you click **Check for updates**, the app queries
+the public Releases list at
+[wilbresley/b-print-downloads](https://github.com/wilbresley/b-print-downloads).
+It does not send screenshots. The installer is downloaded only after you
+confirm **Update automatically**.
+
 ## Local files
 
 Settings, recent-history entries, and logs are stored under:

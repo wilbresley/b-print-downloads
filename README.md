@@ -5,20 +5,21 @@
 **Captura de tela para Windows**, com anotações na hora: setas, formas, texto,
 marca-texto, censura, lupa e editor.
 
-Versão atual: **1.1.0** (8 de setembro de 2026)
+Versão atual: **1.2.0** (20 de outubro de 2026)
 
 O programa fica na bandeja do sistema, instala só para o usuário atual e
 não pede permissão de administrador.
 
-### Novidades da 1.1.0
+### Novidades da 1.2.0
 
-A censura **Tarja** ganhou seletor de cor no menu. A amostra **Cor** fica
-sempre disponível: se Pixelar ou Embaçamento estiver ativo, o clique já
-troca para Tarja, abre o seletor e, ao confirmar, deixa pronto para
-desenhar a área. A cor volta ao preto em cada captura e não é gravada
-nas configurações. Pixelar e Embaçamento continuam iguais. Ao arrastar
-a tarja, a prévia fica semitransparente com borda pontilhada, para
-contrastar em qualquer fundo.
+Caixas de cor, Ajuda, Configurações e Editor cabem no monitor: redimensionam
+e deixam OK/Cancelar clicáveis, inclusive em telas ~1280×680.
+
+**Configurações → Atualizações** consulta este canal a cada 24 h e instala
+direto a versão mais nova (quem está na 1.0.0 pula para a 1.2.0, sem passar
+pela 1.1.0). **Atualizar automaticamente** baixa e instala, sem assistente.
+**Atualizar manualmente** abre esta página no navegador. O instalador de
+upgrade fecha o b-print em execução e substitui os arquivos.
 
 ---
 
@@ -26,12 +27,13 @@ contrastar em qualquer fundo.
 
 | Arquivo | Conteúdo |
 |---------|----------|
-| [b-print-1.1.0-windows-x64.exe](https://github.com/wilbresley/b-print-downloads/releases/download/v1.1.0/b-print-1.1.0-windows-x64.exe) | Instalador Windows 64 bits |
-| [SHA256SUMS.txt](https://github.com/wilbresley/b-print-downloads/releases/download/v1.1.0/SHA256SUMS.txt) | Checksums SHA-256 |
-| [LICENSES.zip](https://github.com/wilbresley/b-print-downloads/releases/download/v1.1.0/LICENSES.zip) | Termos, LGPL/Qt, SBOMs e atribuições |
-| [Releases](https://github.com/wilbresley/b-print-downloads/releases/tag/v1.1.0) | Página completa da versão, inclusive fontes Qt 6.8.2 |
+| [b-print-1.2.0-windows-x64.exe](https://github.com/wilbresley/b-print-downloads/releases/download/v1.2.0/b-print-1.2.0-windows-x64.exe) | Instalador Windows 64 bits |
+| [SHA256SUMS.txt](https://github.com/wilbresley/b-print-downloads/releases/download/v1.2.0/SHA256SUMS.txt) | Checksums SHA-256 |
+| [LICENSES.zip](https://github.com/wilbresley/b-print-downloads/releases/download/v1.2.0/LICENSES.zip) | Termos, LGPL/Qt, SBOMs e atribuições |
+| [Releases](https://github.com/wilbresley/b-print-downloads/releases/tag/v1.2.0) | Página completa da versão, inclusive fontes Qt 6.8.2 |
 
-Versões anteriores ([1.0.1](https://github.com/wilbresley/b-print-downloads/releases/tag/v1.0.1)
+Versões anteriores ([1.1.0](https://github.com/wilbresley/b-print-downloads/releases/tag/v1.1.0),
+[1.0.1](https://github.com/wilbresley/b-print-downloads/releases/tag/v1.0.1)
 e [1.0.0](https://github.com/wilbresley/b-print-downloads/releases/tag/v1.0.0))
 continuam na [lista de Releases](https://github.com/wilbresley/b-print-downloads/releases).
 
@@ -45,7 +47,7 @@ O instalador é **gratuito**.
 
 ## Instalação
 
-1. Baixe `b-print-1.1.0-windows-x64.exe`.
+1. Baixe `b-print-1.2.0-windows-x64.exe`.
 2. Confira o SHA-256 com o arquivo da mesma Release.
 3. Execute o instalador. Ele abre em **Português (Brasil)** e permite escolher
    **English** na primeira tela.
@@ -71,6 +73,8 @@ Instalação silenciosa, desinstalação e linha de comando: [USAGE.md](USAGE.md
 - **ESC** fecha primeiro menus e itens em ajuste; só depois cancela a captura.
 - **Alt** mostra a grade de 5 px só no gesto ativo.
 - Esquerdo + direito, durante o arraste da área, trava nas bordas do monitor.
+- **Configurações → Atualizações**: verificar, instalar a versão mais nova
+  ou abrir esta página no navegador.
 - **Configurações → Desinstalar** remove o programa após confirmação.
   Capturas salvas em outras pastas permanecem.
 
@@ -93,7 +97,8 @@ A Ajuda completa está dentro do próprio programa.
 ## Privacidade
 
 O b-print funciona **só neste computador**. Não envia capturas, telemetria ou
-logs para servidor. Não usa IA em execução.
+logs para servidor. A checagem de atualização consulta só a lista pública
+de Releases neste repositório. Não usa IA em execução.
 
 Detalhes: [PRIVACY.md](PRIVACY.md)
 

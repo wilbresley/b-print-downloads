@@ -2,7 +2,7 @@
 
 [Português (Brasil)](USAGE.md)
 
-Short **b-print 1.1.0** manual for Windows. Full Help lives inside the app
+Short **b-print 1.2.0** manual for Windows. Full Help lives inside the app
 (tray → **Help…**). This English page is informational.
 
 ---
@@ -56,6 +56,9 @@ Open with a right-click on the tray → **Settings…**.
   one to return it to Windows immediately.
 - **Extra shortcut**: combinations with Windows, Ctrl, Alt, or Shift, or
   F1–F24 alone. Esc, Print Screen, and Windows+Shift+S are reserved.
+- **Updates**: **Check for updates** queries the public channel. **Update
+  automatically** downloads and installs the newest version with no wizard.
+  **Update manually** opens the Releases page.
 - **Uninstall b-print**: asks for confirmation. Close any capture, editor, or
   pin first. Captures in other folders remain.
 
@@ -76,13 +79,13 @@ On the **Text** button:
 ## Silent installation
 
 ```powershell
-.\b-print-1.1.0-windows-x64.exe /S /LANG=en
+.\b-print-1.2.0-windows-x64.exe /S /LANG=en
 ```
 
 With options:
 
 ```powershell
-.\b-print-1.1.0-windows-x64.exe /S `
+.\b-print-1.2.0-windows-x64.exe /S `
   /LANG=en `
   /DIR="$env:LOCALAPPDATA\Programs\b-print" `
   /AUTOSTART=0 `
@@ -106,7 +109,7 @@ With options:
 From the installer:
 
 ```powershell
-.\b-print-1.1.0-windows-x64.exe /uninstall /S
+.\b-print-1.2.0-windows-x64.exe /uninstall /S
 ```
 
 From the installed copy:
@@ -148,10 +151,10 @@ Configuration:
 ## Verify SHA-256
 
 ```powershell
-Get-FileHash .\b-print-1.1.0-windows-x64.exe -Algorithm SHA256
+Get-FileHash .\b-print-1.2.0-windows-x64.exe -Algorithm SHA256
 ```
 
-Compare with [SHA256SUMS.txt](https://github.com/wilbresley/b-print-downloads/releases/download/v1.1.0/SHA256SUMS.txt)
+Compare with [SHA256SUMS.txt](https://github.com/wilbresley/b-print-downloads/releases/download/v1.2.0/SHA256SUMS.txt)
 from the same Release.
 
 ---

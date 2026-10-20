@@ -5,20 +5,21 @@
 **Screenshot tool for Windows**, with immediate annotations: arrows, shapes,
 text, highlighter, redaction, magnifier, and an image editor.
 
-Current version: **1.1.0** (8 September 2026)
+Current version: **1.2.0** (20 October 2026)
 
 The app lives in the system tray, installs only for the current user, and
 does not ask for administrator privileges.
 
-### What’s new in 1.1.0
+### What’s new in 1.2.0
 
-Solid-bar redaction now has a color picker in the Censor menu. The
-**Color** swatch stays available: if Pixelate or Blur is selected,
-clicking it switches to Solid bar, opens the picker, and confirming
-arms the tool so you can draw the area. Color resets to black on every
-capture and is not saved in settings. Pixelate and Blur are unchanged.
-While dragging the bar, the preview is semi-transparent with a dashed
-outline so it stays visible on any background.
+Color pickers, Help, Settings, and the editor fit on small monitors: they
+resize and keep OK/Cancel clickable, including on ~1280×680 screens.
+
+**Settings → Updates** checks this channel every 24 hours and installs the
+newest version directly (1.0.0 jumps to 1.2.0 without installing 1.1.0).
+**Update automatically** downloads and installs with no wizard. **Update
+manually** opens this page in the browser. The upgrade installer closes a
+running b-print and replaces the files.
 
 ---
 
@@ -26,12 +27,13 @@ outline so it stays visible on any background.
 
 | File | Contents |
 |------|----------|
-| [b-print-1.1.0-windows-x64.exe](https://github.com/wilbresley/b-print-downloads/releases/download/v1.1.0/b-print-1.1.0-windows-x64.exe) | Windows 64-bit installer |
-| [SHA256SUMS.txt](https://github.com/wilbresley/b-print-downloads/releases/download/v1.1.0/SHA256SUMS.txt) | SHA-256 checksums |
-| [LICENSES.zip](https://github.com/wilbresley/b-print-downloads/releases/download/v1.1.0/LICENSES.zip) | Terms, LGPL/Qt, SBOMs, and attributions |
-| [Releases](https://github.com/wilbresley/b-print-downloads/releases/tag/v1.1.0) | Full release page, including Qt 6.8.2 sources |
+| [b-print-1.2.0-windows-x64.exe](https://github.com/wilbresley/b-print-downloads/releases/download/v1.2.0/b-print-1.2.0-windows-x64.exe) | Windows 64-bit installer |
+| [SHA256SUMS.txt](https://github.com/wilbresley/b-print-downloads/releases/download/v1.2.0/SHA256SUMS.txt) | SHA-256 checksums |
+| [LICENSES.zip](https://github.com/wilbresley/b-print-downloads/releases/download/v1.2.0/LICENSES.zip) | Terms, LGPL/Qt, SBOMs, and attributions |
+| [Releases](https://github.com/wilbresley/b-print-downloads/releases/tag/v1.2.0) | Full release page, including Qt 6.8.2 sources |
 
-Older versions ([1.0.1](https://github.com/wilbresley/b-print-downloads/releases/tag/v1.0.1)
+Older versions ([1.1.0](https://github.com/wilbresley/b-print-downloads/releases/tag/v1.1.0),
+[1.0.1](https://github.com/wilbresley/b-print-downloads/releases/tag/v1.0.1)
 and [1.0.0](https://github.com/wilbresley/b-print-downloads/releases/tag/v1.0.0))
 remain in the [Releases list](https://github.com/wilbresley/b-print-downloads/releases).
 
@@ -48,7 +50,7 @@ versions differ.
 
 ## Installation
 
-1. Download `b-print-1.1.0-windows-x64.exe`.
+1. Download `b-print-1.2.0-windows-x64.exe`.
 2. Verify the SHA-256 against the matching Release file.
 3. Run the installer. It opens in **Brazilian Portuguese** by default;
    choose **English** on the first screen.
@@ -75,6 +77,8 @@ Silent install, uninstall, and command line: [USAGE.en.md](USAGE.en.md)
 - **Alt** shows a 5 px grid for the active gesture only.
 - Left + right buttons while dragging lock the area to the current monitor
   edges.
+- **Settings → Updates**: check, install the newest version, or open this
+  page in the browser.
 - **Settings → Uninstall** removes the program after confirmation. Captures
   saved elsewhere remain.
 
@@ -97,7 +101,8 @@ The full Help manual is included in the application.
 ## Privacy
 
 b-print works **only on this computer**. It does not send screenshots,
-telemetry, or logs to a server. It does not use AI at runtime.
+telemetry, or logs to a server. Update checks only query this repository’s
+public Releases list. It does not use AI at runtime.
 
 Details: [PRIVACY.en.md](PRIVACY.en.md)
 
