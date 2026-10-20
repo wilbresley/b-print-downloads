@@ -58,7 +58,8 @@ Open with a right-click on the tray → **Settings…**.
   F1–F24 alone. Esc, Print Screen, and Windows+Shift+S are reserved.
 - **Updates**: **Check for updates** queries the public channel. **Update
   automatically** opens a separate updater, closes the app, then downloads
-  and installs the newest version. **Update manually** opens the Releases page.
+  and installs the newest version (the download bar does not flicker the
+  window). **Update manually** opens the Releases page.
 - **Uninstall b-print**: asks for confirmation. Close any capture, editor, or
   pin first. Captures in other folders remain.
 
