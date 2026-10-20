@@ -5,22 +5,19 @@
 **Captura de tela para Windows**, com anotações na hora: setas, formas, texto,
 marca-texto, censura, lupa e editor.
 
-Versão atual: **1.2.0** (20 de outubro de 2026)
+Versão atual: **1.2.1** (20 de outubro de 2026)
 
 O programa fica na bandeja do sistema, instala só para o usuário atual e
 não pede permissão de administrador.
 
-### Novidades da 1.2.0
+### Novidades da 1.2.1
 
-Caixas de cor, Ajuda, Configurações e Editor cabem no monitor: redimensionam
-e deixam OK/Cancelar clicáveis, inclusive em telas ~1280×680.
+**Print Screen** e **Windows+Shift+S** continuam no b-print mesmo se o
+programa for encerrado à força. Só o **Sair** da bandeja (ou desinstalar)
+devolve os atalhos ao Windows.
 
-**Configurações → Atualizações** consulta este canal a cada 24 h e instala
-direto a versão mais nova (quem está na 1.0.0 pula para a 1.2.0, sem passar
-pela 1.1.0). **Atualizar automaticamente** abre o atualizador separado,
-fecha o app, baixa e instala (a barra de download enche sem piscar a janela).
-**Atualizar manualmente** abre esta página no navegador. O instalador de
-upgrade fecha o b-print em execução e substitui os arquivos.
+Quem está numa versão anterior pula direto para a 1.2.1. **Atualizar
+automaticamente** abre o atualizador separado.
 
 ---
 
@@ -28,12 +25,13 @@ upgrade fecha o b-print em execução e substitui os arquivos.
 
 | Arquivo | Conteúdo |
 |---------|----------|
-| [b-print-1.2.0-windows-x64.exe](https://github.com/wilbresley/b-print-downloads/releases/download/v1.2.0/b-print-1.2.0-windows-x64.exe) | Instalador Windows 64 bits |
-| [SHA256SUMS.txt](https://github.com/wilbresley/b-print-downloads/releases/download/v1.2.0/SHA256SUMS.txt) | Checksums SHA-256 |
-| [LICENSES.zip](https://github.com/wilbresley/b-print-downloads/releases/download/v1.2.0/LICENSES.zip) | Termos, LGPL/Qt, SBOMs e atribuições |
-| [Releases](https://github.com/wilbresley/b-print-downloads/releases/tag/v1.2.0) | Página completa da versão, inclusive fontes Qt 6.8.2 |
+| [b-print-1.2.1-windows-x64.exe](https://github.com/wilbresley/b-print-downloads/releases/download/v1.2.1/b-print-1.2.1-windows-x64.exe) | Instalador Windows 64 bits |
+| [SHA256SUMS.txt](https://github.com/wilbresley/b-print-downloads/releases/download/v1.2.1/SHA256SUMS.txt) | Checksums SHA-256 |
+| [LICENSES.zip](https://github.com/wilbresley/b-print-downloads/releases/download/v1.2.1/LICENSES.zip) | Termos, LGPL/Qt, SBOMs e atribuições |
+| [Releases](https://github.com/wilbresley/b-print-downloads/releases/tag/v1.2.1) | Página completa da versão, inclusive fontes Qt 6.8.2 |
 
-Versões anteriores ([1.1.0](https://github.com/wilbresley/b-print-downloads/releases/tag/v1.1.0),
+Versões anteriores ([1.2.0](https://github.com/wilbresley/b-print-downloads/releases/tag/v1.2.0),
+[1.1.0](https://github.com/wilbresley/b-print-downloads/releases/tag/v1.1.0),
 [1.0.1](https://github.com/wilbresley/b-print-downloads/releases/tag/v1.0.1)
 e [1.0.0](https://github.com/wilbresley/b-print-downloads/releases/tag/v1.0.0))
 continuam na [lista de Releases](https://github.com/wilbresley/b-print-downloads/releases).
@@ -48,7 +46,7 @@ O instalador é **gratuito**.
 
 ## Instalação
 
-1. Baixe `b-print-1.2.0-windows-x64.exe`.
+1. Baixe `b-print-1.2.1-windows-x64.exe`.
 2. Confira o SHA-256 com o arquivo da mesma Release.
 3. Execute o instalador. Ele abre em **Português (Brasil)** e permite escolher
    **English** na primeira tela.
@@ -67,7 +65,8 @@ Instalação silenciosa, desinstalação e linha de comando: [USAGE.md](USAGE.md
 ## Uso rápido
 
 - **Print Screen** e **Windows+Shift+S** abrem o b-print por padrão. Cada um
-  pode ser devolvido ao Windows em Configurações → Captura.
+  pode ser devolvido ao Windows em Configurações → Captura. Encerrar o
+  processo à força não devolve; só o Sair da bandeja.
 - **Windows+Shift+D** é o atalho extra (configurável; também aceita F1–F24).
 - **Clique esquerdo** no ícone da bandeja: capturar uma região.
 - **Clique direito**: todos os modos, Configurações, Ajuda e Sair.
